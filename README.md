@@ -14,3 +14,12 @@ Route         | Method   |  Body (JSON)              |     Response             
 /users/logout  |  POST    |              -           |                  Status code 200                            |      Logouts the user on server.
 /users/logoutAll  |  POST    |              -        |                  Status code 200                            |      Logouts all user clients on server.
 /users/me  |  GET    |              -                |                age, _id, name, email, createdAt, updatedAt  |      Return all user profile information.
+/users/me  |  PATCH    |  name, email, password,email      |          age, _id, name, email, createdAt, updatedAt  |      Update all user profile information.
+/users/me  |  DELETE    |  -                         |          age, _id, name, email, createdAt, updatedAt        |      Delete user profile.
+/users/me/avatar  |  POST    |  Form-Data Image File(jpg,jpeg e png)      |          Status code 200               |      Upload user avatar.
+/users/me/avatar  |  DELETE    |  -                          |          Status code 200                            |      Delete user avatar.
+/tasks  |  POST    |  description, completed (true or false)   |  _id, owner,description,completed,createdAt,updateAt |   Create a new user task.
+/tasks  |  GET    |  -                      |  _id, owner,description,completed,createdAt,updateAt for each task    |     List all user tasks.
+/tasks/:id  |  GET    |  -                      |  _id, owner,description,completed,createdAt,updateAt              |     List task by id.
+/tasks/:id  |  PATCH    |  description,completed   |  _id, owner,description,completed,createdAt,updateAt           |     Update task by id.
+/tasks/:id  |  DELETE    |  -                    |  _id, owner,description,completed,createdAt,updateAt           |       Delete task by id.
