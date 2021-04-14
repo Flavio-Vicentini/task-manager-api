@@ -8,11 +8,19 @@
 
 
 <h2>Getting Started</h2>
-<p>To run this project you can follow the steps bellow:</p>
+<p>To run this project on a developer environment you can follow the steps bellow:</p>
 
-1. Create an account on the site https://sendgrid.com/ and take the API key.
-2. Donwload and configure the MongoDB on https://www.mongodb.com/try/download/community.
-3. Choose one paste and on terminal execute  
+1. Create an account on the site https://sendgrid.com/ and take the API key;
+2. Donwload and configure the MongoDB on https://www.mongodb.com/try/download/community;
+3. Choose a folder and on terminal execute git clone https://github.com/Flavio-Vicentini/task-manager-api.git;
+4. On archive src/emails/account.js insert the email registered in the from field of functions sendWelcomeEmail and sendCancelationEmail;
+5. Create a folder on the root called *config* and an archive called *dev.env*;
+6. On this archive you have to configure the developer environment writing the following variables:
+    * PORT = a port for your server to receive and send requests (Ex: 3000)  
+    * SEND_GRID_API_KEY = the api key generated when registering on the sendgrid website
+    * JWT_SECRET= any word to generate the JWT signature
+    * MONGODB_URL= mongodb://127.0.0.1:27017/your-mongodb-name
+7. Finally at the terminal run *npm install* and then *npm run dev*
 
 <h2>Routes</h2>
 
