@@ -5,6 +5,12 @@
 <h2>About</h2>
 <p>Project development for The Complete Node.js Developer Course (Udemy) made by Andrew Mead. The project is an API Rest for task management with authentication, sending emails, avatar upload and create,list,update and delete tasks.</p>
 
+
+
+<h2>Getting Started</h2>
+<p>To run this project you can follow the steps bellow:</p>
+1. Cadastrar no send grid
+
 <h2>Routes</h2>
 
 Route         | Method   |  Body (JSON)              |     Response                                                |      Functionality
