@@ -9,9 +9,10 @@
 
 <h2>Getting Started</h2>
 <p>To run this project you can follow the steps bellow:</p>
-1.Create an account on the site https://sendgrid.com/ and take the API key.
-2.Donwload and configure the MongoDB on https://www.mongodb.com/try/download/community.
-3. 
+
+1. Create an account on the site https://sendgrid.com/ and take the API key.
+2. Donwload and configure the MongoDB on https://www.mongodb.com/try/download/community.
+3. Choose one paste and on terminal execute  
 
 <h2>Routes</h2>
 
