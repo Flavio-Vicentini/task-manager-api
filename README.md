@@ -13,7 +13,7 @@
 1. Create an account on the site https://sendgrid.com/ and take the API key;
 2. Donwload and configure the MongoDB on https://www.mongodb.com/try/download/community;
 3. Choose a folder and on terminal execute git clone https://github.com/Flavio-Vicentini/task-manager-api.git;
-4. On archive src/emails/account.js insert the email registered in the from field of functions sendWelcomeEmail and sendCancelationEmail;
+4. On archive src/emails/account.js insert the email registered in the *from* field of functions *sendWelcomeEmail* and *sendCancelationEmail*;
 5. Create a folder on the root called *config* and an archive called *dev.env*;
 6. On this archive you have to configure the developer environment writing the following variables:
     * PORT = a port for your server to receive and send requests (Ex: 3000)  
@@ -34,6 +34,7 @@ Route         | Method   |  Body (JSON)              |     Response             
 /users/me  |  PATCH    |  name, email, password,email      |          age, _id, name, email, createdAt, updatedAt  |      Update all user profile information.
 /users/me  |  DELETE    |  -                         |          age, _id, name, email, createdAt, updatedAt        |      Delete user profile.
 /users/me/avatar  |  POST    |  Form-Data Image File(jpg,jpeg e png)      |          Status code 200               |      Upload user avatar.
+/users/:id/avatar  |  GET    |  -      |          Image File                                                       |      Return user avatar.
 /users/me/avatar  |  DELETE    |  -                          |          Status code 200                            |      Delete user avatar.
 /tasks  |  POST    |  description, completed (true or false)   |  _id, owner,description,completed,createdAt,updateAt |   Create a new user task.
 /tasks  |  GET    |  -                      |  _id, owner,description,completed,createdAt,updateAt for each task    |     List all user tasks.
