@@ -1,28 +1,10 @@
 import request from 'supertest'
 import app from '../src/app'
-import jwt from 'jsonwebtoken'
-import mongoose from 'mongoose'
 import { test } from '@jest/globals'
 import User from '../src/models/User'
+import {userOne,userOneId,setupDataBase} from './fixtures/db'
 
-const userOneId = new mongoose.Types.ObjectId()
-
-const userOne = {
-    _id: userOneId,
-    name : 'userOne',
-    email: 'userone@test.com',
-    password: '12345678',
-    tokens: [{
-        token: jwt.sign({_id: userOneId},process.env.JWT_SECRET)
-    }]
-}
-
-
-beforeEach(async () => {
-    await User.deleteMany()
-    await new User(userOne).save()
-})
-
+beforeEach(setupDataBase)
 
 test('should signup a new user', async () => {
     const response = await request(app).post('/users').send({
