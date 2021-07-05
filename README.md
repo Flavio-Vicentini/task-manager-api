@@ -3,8 +3,8 @@
 ---
 
 <h2>About</h2>
-<p>Project development for The Complete Node.js Developer Course (Udemy) made by Andrew Mead. The project is an API Rest for task management with authentication, sending emails, avatar upload and create,list,update and delete tasks.</p>
-<p>The technologies used for the development were NodeJS (Express,Multer,JWT) and MongoDB (Mongoose).</p>
+<p>Project development for The Complete Node.js Developer Course (Udemy) made by Andrew Mead. The project is an API Rest for task management with authentication, sending emails, avatar upload,create,list,update and delete tasks and tests with Jest.</p>
+<p>The technologies used for the development were NodeJS (Express,Multer,JWT),MongoDB (Mongoose) and Jest for testing.</p>
 
 
 
